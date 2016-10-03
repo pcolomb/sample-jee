@@ -6,21 +6,21 @@ curl http:/location/ws/hello
 
 ## Todo List
 
-List Todos
+**List Todos**
 curl http:/location/ws/todo
 
-Add Todo
+**Add Todo**
 
-curl -X POST -d text="My Todo" http://localhost:8080/sample-javaee-1.0-SNAPSHOT/ws/todo
+curl -X POST -d text="My Todo" http://location/ws/todo
 
-Delete Todo
+**Delete Todo**
 
-curl -X DELETE http://localhost:8080/sample-javaee-1.0-SNAPSHOT/ws/todo/{id}
+curl -X DELETE http://location/ws/todo/{id}
 
-Check Todo
+**Check Todo**
 
-curl -X PUT -d done="true" http://localhost:8080/sample-javaee-1.0-SNAPSHOT/ws/todo/{id}
+curl -X PUT -d done="true" http://location/ws/todo/{id}
 
-Uncheck Todo
+**Uncheck Todo**
 
-curl -X PUT -d done="true" http://localhost:8080/sample-javaee-1.0-SNAPSHOT/ws/todo/{id}
+curl -X PUT -d done="false" http://location/ws/todo/{id}
